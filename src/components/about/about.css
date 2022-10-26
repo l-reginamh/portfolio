@@ -1,0 +1,52 @@
+.about {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 80px 0px;
+    background-color: var(--background);
+}
+
+.vertical-title {
+    font-size: var(--font-size-lg);
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 10px;
+    top: 155px;
+}
+
+.content {
+    font-size: var(--fontsize-sm);
+    max-width: 400px;
+    margin-left: 50px;
+}
+
+.about-img {
+    width: 200px;
+}
+
+.about-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.title {
+    font-size: var(--font-size-md);
+}
+
+.skills {
+    margin-top: 80px;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 10px 10px;
+}

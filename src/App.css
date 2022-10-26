@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Montserrat&display=swap');
+
+:root {
+  --background: #F7FDFE;
+  --text-primary: #004E60;
+  --text-highlight-primary: #00BCE5;
+  --text-highlight-secondary: #FFD232;
+  --text-highlight-tertiary: #FF9595;
+  --toggle-background: #ffffff;
+  --toggle-color: #B3EBF8;
+  --company: #A100FF;
+  --deep-blue: #0084A1;
+
+  --body-font: "Montserrat", san-serif;
+
+  --font-size-xl: 4.5rem;
+  --font-size-lg: 2.5rem;
+  --font-size-md: 2.25rem;
+  --font-size-sm: 2rem;
+  --font-size-xs: 0.75rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.light {
+  --background: #F7FDFE;
+  --text-primary: #004E60;
+  --text-primary-hover: #0084A1;
+  --text-highlight-primary: #00BCE5;
+  --text-highlight-secondary: #FFD232;
+  --text-highlight-tertiary: #FF9595;
+  --toggle-background: #ffffff;
+  --toggle-color: #B3EBF8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+[darkTheme], .dark {
+  --background: #00262F;
+  --text-primary: #F7FDFE;
+  --text-primary-hover: #B3EBF8;
+  --text-highlight-primary: #FFD232;
+  --text-highlight-secondary: #FF9595;
+  --text-highlight-tertiary: #00BCE5;
+  --toggle-background: #003541;
+  --toggle-color: #005D73;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, button {
+  font-family: var(--body-font);
+  font-size: var(--font-size-xs);
+}
+
+.app {
+  background-color: var(--background);
+}
+
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pl-6 {
+  padding-left: 6rem;
+}
+
+.flex {
   display: flex;
+}
+
+.flex-horizontal {
+  flex-direction: row;
+}
+
+.flex-vertical {
   flex-direction: column;
+}
+
+.flex-align-item-start {
+  align-items: flex-start;
+}
+
+.flex-align-item-center {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-align-item-end {
+  align-items: flex-end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-space-around {
+  justify-content: space-around;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+/*================================*/
+@media screen and (max-width: 992px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 576px) {
+  
+}
+
+@media screen and (max-width: 350px) {
+  
 }

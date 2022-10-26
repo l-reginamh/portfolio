@@ -1,0 +1,40 @@
+.home {
+    padding-top: 3.8em;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--background);
+}
+
+.greeting {
+    font-size: var(--font-size-lg);
+    color: var(--text-highlight-primary);
+}
+
+.intro {
+    font-size: var(--font-size-xl);
+}
+
+.description {
+    font-size: var(--font-size-md);
+}
+
+.description span {
+    color: var(--company);
+}
+
+.resume {
+    margin-top: 15px;
+    font-size: var(--font-size-xs);
+}
+
+.resume a {
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0px 10px;
+    border: 1px solid var(--text-primary);
+    border-radius: 8px;
+}
