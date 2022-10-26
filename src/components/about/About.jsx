@@ -5,7 +5,7 @@ import profile from "../../assets/images/profile.png";
 const About = () => {
 
     return (
-        <div className='about container pl-6'>
+        <div id='about' className='about container pl-6'>
             <div className="vertical-title">
                 About me
             </div>

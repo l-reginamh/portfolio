@@ -16,9 +16,7 @@
 }
 
 .content {
-    font-size: var(--font-size-xs);
     max-width: 400px;
-    margin-left: 100px;
 }
 
 .about-img {
@@ -32,10 +30,6 @@
 
 .about-description {
     line-height: 1.25rem;
-}
-
-.about-description span.company {
-    color: var(--company);
 }
 
 .about-description span.primary {
@@ -70,6 +64,7 @@
 }
 
 .skill-item {
+    font-size: var(--font-size-sm-2);
     border-radius: 8px;
     padding: 8px 12px;
     margin: 10px 10px;

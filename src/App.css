@@ -26,17 +26,6 @@
   --font-size-xs: 0.75rem;
 }
 
-.light {
-  --background: #F7FDFE;
-  --text-primary: #004E60;
-  --text-primary-hover: #0084A1;
-  --text-highlight-primary: #00BCE5;
-  --text-highlight-secondary: #FFD232;
-  --text-highlight-tertiary: #FF9595;
-  --toggle-background: #ffffff;
-  --toggle-color: #B3EBF8;
-}
-
 [darkTheme], .dark {
   --background: #00262F;
   --text-primary: #F7FDFE;
@@ -76,6 +65,15 @@ body, button {
   position: relative;
 }
 
+.container-block {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 80px 0px;
+  background-color: var(--background);
+}
+
 .pl-6 {
   padding-left: 6rem;
 }
@@ -84,40 +82,17 @@ body, button {
   padding-bottom: 3rem;
 }
 
-.flex {
-  display: flex;
-}
-
-.flex-horizontal {
-  flex-direction: row;
-}
-
-.flex-vertical {
-  flex-direction: column;
-}
-
-.flex-align-item-start {
-  align-items: flex-start;
-}
-
-.flex-align-item-center {
-  align-items: center;
-}
-
-.flex-align-item-end {
-  align-items: flex-end;
-}
-
-.flex-space-around {
-  justify-content: space-around;
-}
-
-.flex-space-between {
-  justify-content: space-between;
-}
-
 .center {
   text-align: center;
+}
+
+.company {
+  color: var(--company);
+}
+
+.content {
+  margin-left: 100px;
+  font-size: var(--font-size-sm-2);
 }
 
 /*================================*/
@@ -126,13 +101,41 @@ body, button {
 }
 
 @media screen and (max-width: 768px) {
-  
+  .skill-item {
+      margin-left: 0px;
+  }
 }
 
 @media screen and (max-width: 576px) {
-  
+  :root {
+    --font-size-xl: 4.5rem;
+    --font-size-lg: 2.5rem;
+    --font-size-md: 1.75rem;
+    --font-size-md-2: 1rem;
+    --font-size-sm: 1.5rem;
+    --font-size-sm-2: 0.75rem;
+    --font-size-xs: 0.75rem;
+  }
+
+  .pl-6 {
+    padding-left: 3rem;
+  }
+
+  .pb-3 {
+    padding-bottom: 1.5rem;
+  }
+
+  .vertical-title {
+    transform: none;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .content {
+    margin-left: 0px;
+  }
 }
 
 @media screen and (max-width: 350px) {
-  
 }

@@ -1,6 +1,8 @@
 .social-media {
-    position: absolute;
-    top: 40%;
+    z-index: 10;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 40vh;
     left: 20px;
 }
 
