@@ -11,14 +11,14 @@
     font-size: var(--font-size-lg);
     transform: rotate(-90deg);
     position: absolute;
-    left: 10px;
-    top: 155px;
+    left: 0px;
+    top: 172px;
 }
 
 .content {
-    font-size: var(--fontsize-sm);
+    font-size: var(--font-size-xs);
     max-width: 400px;
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 .about-img {
@@ -28,6 +28,26 @@
 .about-img img {
     width: 100%;
     object-fit: cover;
+}
+
+.about-description {
+    line-height: 1.25rem;
+}
+
+.about-description span.company {
+    color: var(--company);
+}
+
+.about-description span.primary {
+    color: var(--text-highlight-primary);
+}
+
+.about-description span.secondary {
+    color: var(--text-highlight-secondary);
+}
+
+.about-description span.tertiary {
+    color: var(--text-highlight-tertiary);
 }
 
 .title {
@@ -40,13 +60,37 @@
 
 .skill-list {
     display: flex;
+    flex-direction: column;
+}
+
+.skill-row {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 .skill-item {
-    border: 1px solid #000;
     border-radius: 8px;
     padding: 8px 12px;
     margin: 10px 10px;
+    background-color: var(--white);
+}
+
+.skill-item:first-child {
+    margin-left: 0px;
+}
+
+.row-1 .skill-item {
+    border: 1px solid var(--text-highlight-primary);
+    color: var(--text-highlight-primary);
+}
+
+.row-2 .skill-item {
+    border: 1px solid var(--text-highlight-secondary);
+    color: var(--text-highlight-secondary);
+}
+
+.row-3 .skill-item {
+    border: 1px solid var(--text-highlight-tertiary);
+    color: var(--text-highlight-tertiary);
 }

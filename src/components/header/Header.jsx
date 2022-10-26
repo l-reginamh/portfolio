@@ -18,9 +18,9 @@ const Header = () => {
                         <li className='nav_item'>
                             <a href="#experience" className='nav_link'>Experience</a>
                         </li>
-                        <li className='nav_item'>
+                        {/* <li className='nav_item'>
                             <a href="#project" className='nav_link'>Project</a>
-                        </li>
+                        </li> */}
                         <li className='nav_item'>
                             <button type='button' className='theme_toggle'><i class='bx bx-sun'></i></button>
                         </li>

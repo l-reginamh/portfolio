@@ -1,0 +1,18 @@
+.social-media {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+}
+
+.social-media-list {
+    list-style: none;
+}
+
+.social-media-item {
+    font-size: var(--font-size-md-2);
+    margin: 20px 10px;
+}
+
+.social-media-item a {
+    color: var(--text-highlight-primary);
+}
