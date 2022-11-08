@@ -15,15 +15,18 @@
 
 .intro {
     font-size: var(--font-size-xl);
+    color: var(--text-primary);
 }
 
 .description {
     font-size: var(--font-size-md);
+    color: var(--text-primary);
 }
 
 .resume {
     margin-top: 50px;
     font-size: var(--font-size-xs);
+    color: var(--text-primary);
 }
 
 .resume a {

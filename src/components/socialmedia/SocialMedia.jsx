@@ -10,10 +10,10 @@ const SocialMedia = () => {
                     <a href="mailto:reginaliew9@gmail.com"><i class='bx bxs-envelope'></i></a>
                 </li>
                 <li className='social-media-item'>
-                    <a href="https://linkedin.com/in/mhliew-regina"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://linkedin.com/in/mhliew-regina" target="_blank"><i class='bx bxl-linkedin' ></i></a>
                 </li>
                 <li className='social-media-item'>
-                    <a href="https://github.com/l-reginamh"><i class='bx bxl-github'></i></a>
+                    <a href="https://github.com/l-reginamh" target="_blank"><i class='bx bxl-github'></i></a>
                 </li>
             </ul>
         </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 import About from './components/about/About';
@@ -9,10 +9,15 @@ import SocialMedia from './components/socialmedia/SocialMedia';
 import './App.css';
 
 function App() {
+  const [theme, setTheme] = useState('theme' ? 'dark' : 'light')
+  const switchTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme)
+  }
   return (
-    <div className="app">
+    <div className="app" data-theme={theme}>
       <div className='container'>
-        <Header />
+        <Header theme={theme} themeChange={thetheme => switchTheme()} />
         <SocialMedia />
         <Home />
         <About />
