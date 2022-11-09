@@ -2,31 +2,60 @@ import React from 'react';
 import "./header.css";
 import logo from "../../assets/images/logo-text.png";
 import logoDark from "../../assets/images/logo-text-dark.png";
+import { useState } from 'react';
 
 const Header = (props) => {
+    const [click, setClick] = useState(false);
+    const handleClick = () => {
+        setClick(!click);
+    }
     return (
         <header className='header'>
-            <nav className='nav container'>
-                <a href='index.html' className='nav_logo'>
+            <nav className='nav'>
+                <a href='index.html' className='nav-logo'>
                     <img src={props.theme == 'light' ? logo : logoDark} alt="reg" />
                 </a>
-                <div className='nav_menu'>
-                    <ul className='nav_list'>
-                        <li className='nav_item'>
-                            <a href="#about" className='nav_link'>About</a>
+                <div className='nav-menu'>
+                    <ul className='nav-list'>
+                        <li className='nav-item'>
+                            <a href="#about" className='nav-link'>About</a>
                         </li>
-                        <li className='nav_item'>
-                            <a href="#experience" className='nav_link'>Experience</a>
+                        <li className='nav-item'>
+                            <a href="#experience" className='nav-link'>Experience</a>
                         </li>
-                        {/* <li className='nav_item'>
-                            <a href="#project" className='nav_link'>Project</a>
+                        {/* <li className='nav-item'>
+                            <a href="#project" className='nav-link'>Project</a>
                         </li> */}
-                        <li className='nav_item'>
-                            <button type='button' className='theme_toggle' onClick={() => props.themeChange()}><i class='bx bx-sun sunlight'></i>/<i class='bx bx-moon moonlight'></i></button>
+                        <li className='nav-item'>
+                            <button type='button' className='theme-toggle' onClick={() => props.themeChange()}><i class='bx bx-sun sunlight'></i>/<i class='bx bx-moon moonlight'></i></button>
                         </li>
                     </ul>
                 </div>
             </nav>
+            <nav className='nav-mobile'>
+                <a href='index.html' className='nav-logo'>
+                    <img src={props.theme == 'light' ? logo : logoDark} alt="reg" />
+                </a>
+                <button className="nav-btn">
+                    <i className={click ? "fa-solid fa-xmark" : "fa-solid fa-bars"} onClick={handleClick}></i>
+                </button>
+            </nav>
+                <div className={click ? 'nav-mobile-menu show' : 'nav-mobile-menu hide'}>
+                    <ul className='nav-list'>
+                        <li className='nav-item'>
+                            <a href="#about" className='nav-link'>About</a>
+                        </li>
+                        <li className='nav-item'>
+                            <a href="#experience" className='nav-link'>Experience</a>
+                        </li>
+                        {/* <li className='nav-item'>
+                                <a href="#project" className='nav-link'>Project</a>
+                            </li> */}
+                        <li className='nav-item'>
+                            <button type='button' className='theme-toggle' onClick={() => props.themeChange()}><i class='bx bx-sun sunlight'></i>/<i class='bx bx-moon moonlight'></i></button>
+                        </li>
+                    </ul>
+                </div>
         </header>
     );
 }

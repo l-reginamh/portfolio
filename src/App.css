@@ -2,7 +2,7 @@
 
 :root {
   --background: #F7FDFE;
-  --background-opacity: rgba(247, 253, 254, 0.01);
+  --background-opacity: rgba(247, 253, 254, 0.5);
   --text-primary: #004E60;
   --text-primary-opacity: rgba(0, 78, 96, 0.1);
   --text-highlight-primary: #00BCE5;
