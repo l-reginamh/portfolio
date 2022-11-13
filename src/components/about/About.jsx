@@ -5,7 +5,7 @@ import profile from "../../assets/images/profile.png";
 const About = () => {
 
     return (
-        <div id='about' className='about container pl-6'>
+        <div id='about' className='about background container'>
             <div className="vertical-title">
                 About me
             </div>
@@ -16,7 +16,7 @@ const About = () => {
                 <div className="about-description">
                     <br/><br/>
                     Hey there! My name is Regina, software engineer at <span className='company'>Accenture</span> based in Malaysia.<br/>
-                    I can speak in <span className='primary'>English</span>, <span className='secondary'>Mandarin</span>, <span className='secondary'>Cantonese</span>, and <span className='tertiary'>Malay</span>. <br/>
+                    I can speak in <span className='primary'>English</span>, <span className='secondary'>Mandarin</span>, <span className='secondary'>Cantonese</span>, and <span className='tertiary'>Malay</span>. My favourite activities are singing and doing handicraft.<br/>
                     <br /><br/>
                     Currently, I'm doing a refreshing on my Java knowlegde and also learning ReactJS. Besides learning programming language and frameworks, I'm also learning UIUX design occasionally.
                 </div>

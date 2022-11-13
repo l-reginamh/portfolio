@@ -4,7 +4,7 @@ import "./contact.css";
 const Contact = () => {
 
     return (
-        <div className='contact container pl-6'>
+        <div id='getintouch' className='contact background container'>
             <div className="vertical-title">
                 Get In Touch
             </div>

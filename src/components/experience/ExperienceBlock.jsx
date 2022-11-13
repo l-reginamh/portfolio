@@ -27,7 +27,7 @@ const ExperienceBlock = ({experiences}) => {
                         </div>
                     </div>
                 );
-            })
+            }).reverse()
         }
         </>
     );

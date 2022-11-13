@@ -1,25 +1,9 @@
 .exp {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    position: relative;
     padding: 80px 0px;
-    background-color: var(--background);
-    color: var(--text-primary);
-}
-
-.vertical-title {
-    font-size: var(--font-size-lg);
-    transform: rotate(-90deg);
-    position: absolute;
-    left: 0px;
-    top: 185px;
 }
 
 .content {
     font-size: var(--font-size-xs);
-    max-width: 600px;
-    margin-left: 100px;
     line-height: 1.25rem;
 }
 
@@ -38,7 +22,7 @@
 }
 
 .exp-company {
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-sm);
     font-weight: bold;
     line-height: 2.25rem;
 }
@@ -62,10 +46,4 @@
 
 .exp-description ul {
     margin-left: 20px;
-}
-
-@media screen and (max-width: 576px) {
-    .content {
-        padding-right: 10px;
-    }
 }

@@ -1,5 +1,5 @@
 .contact {
-    min-height: calc(100vh - 5rem);
+    min-height: calc(100vh - 10rem);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -8,18 +8,9 @@
     color: var(--text-primary);
 }
 
-.vertical-title {
-    font-size: var(--font-size-lg);
-    transform: rotate(-90deg);
-    position: absolute;
-    left: 0px;
-    top: 190px;
-}
-
 .content {
     font-size: var(--font-size-sm-2);
     max-width: 550px;
-    margin-left: 100px;
     line-height: 1.25rem;
 }
 
