@@ -25,8 +25,17 @@
     font-size: var(--font-size-xs);
 }
 
-.proj-description {
+.proj-techstack {
     margin-top: 10px;
+    font-size: var(--font-size-xs);
+}
+
+.proj-techstack span {
+    color: var(--text-highlight-primary);
+}
+
+.proj-description {
+    margin: 10px 0px;
     font-size: var(--font-size-xs);
 }
 
